@@ -19,3 +19,13 @@ class Heroes(models.Model):
     str_gain = models.FloatField()
     agi_gain = models.FloatField()
     int_gain = models.FloatField()
+    possible_name = models.CharField(max_length=200)
+
+
+class Items(models.Model):
+    name = models.CharField(max_length=32)
+
+
+class Answer(models.Model):
+    type_ans = models.CharField(max_length=10)
+    text = models.CharField(max_length=1024)
