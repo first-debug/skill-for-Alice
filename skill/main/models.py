@@ -20,6 +20,7 @@ class Heroes(models.Model):
     agi_gain = models.FloatField()
     int_gain = models.FloatField()
     possible_name = models.CharField(max_length=200)
+    image_id = models.TextField(default='')
 
 
 class Items(models.Model):
@@ -29,3 +30,14 @@ class Items(models.Model):
 class Answer(models.Model):
     type_ans = models.CharField(max_length=10)
     text = models.CharField(max_length=1024)
+
+
+class UserData(models.Model):
+    user_id = models.TextField(primary_key=True)
+    count_unrec = models.IntegerField(default=0)
+    recent_names = models.TextField(default='')
+
+
+class NewPossibleNames(models.Model):
+    name = models.CharField( max_length=19)
+    possible_name = models.CharField(max_length=200)

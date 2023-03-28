@@ -1,6 +1,8 @@
 /test
 /venv
+skill/skill/__pycache__
 skill/skill/__pycache__/settings.cpython-311.pyc
+skill/main/__pycache__
 skill/main/__pycache__/admin.cpython-311.pyc
 skill/main/__pycache__/functions.cpython-311.pyc
 skill/main/__pycache__/models.cpython-311.pyc
@@ -9,3 +11,5 @@ skill/main/migrations/__pycache__/0008_answers.cpython-311.pyc
 skill/main/migrations/__pycache__/0009_rename_answers_answer.cpython-311.pyc
 skill/main/migrations/__pycache__/0010_items_heroes_possible_name.cpython-311.pyc
 skill/main/migrations/__pycache__/0011_items_name.cpython-311.pyc
+skill/db.db3
+skill/yest.py

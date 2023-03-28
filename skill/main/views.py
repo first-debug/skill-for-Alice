@@ -17,5 +17,6 @@ def post(request):
             'end_session': False
         }
     }
+    # db_actions()
     handle_dialog(response, req)
     return HttpResponse(json.dumps(response))
